@@ -205,6 +205,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ImageHeight" destination="mPI-os-Ubn" id="yZp-W1-50H"/>
                         <outlet property="geners" destination="mCf-eO-Sbh" id="Lqm-m2-gmN"/>
                         <outlet property="movieDescription" destination="is7-VN-hW3" id="11b-yp-W81"/>
                         <outlet property="movieImage" destination="wyY-7m-980" id="tjt-Bs-qAt"/>

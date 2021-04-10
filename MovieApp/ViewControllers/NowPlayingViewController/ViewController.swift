@@ -64,7 +64,7 @@ class ViewController: mainViewController,UIScrollViewDelegate {
         for movie in allMovies.results {
             let movie_view = MovieView()
             movie_view.widthAnchor.constraint(equalToConstant: screenWidth).isActive = true
-            movie_view.heightAnchor.constraint(equalToConstant: 200).isActive = true
+            movie_view.heightAnchor.constraint(equalToConstant: screenWidth * 2/3).isActive = true
 
             movie_view.delegate = self
             movie_view.setMovie = movie

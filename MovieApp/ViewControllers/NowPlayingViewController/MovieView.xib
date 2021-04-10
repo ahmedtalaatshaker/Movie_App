@@ -91,9 +91,6 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQO-QY-8F2">
                             <rect key="frame" x="0.0" y="0.0" width="290" height="150"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="150" id="Vy2-Qv-dEi"/>
-                            </constraints>
                             <connections>
                                 <action selector="openMovie:" destination="-1" eventType="touchUpInside" id="zdo-Kp-aPa"/>
                             </connections>
@@ -112,6 +109,7 @@
                         <constraint firstAttribute="trailing" secondItem="YzI-uh-1Ki" secondAttribute="trailing" id="l2X-wL-emV"/>
                         <constraint firstItem="ItK-W6-2uG" firstAttribute="top" secondItem="XdB-s7-cvZ" secondAttribute="top" constant="20" id="lRg-Xx-H9A"/>
                         <constraint firstItem="YzI-uh-1Ki" firstAttribute="top" secondItem="XdB-s7-cvZ" secondAttribute="top" id="mNq-4x-0sF"/>
+                        <constraint firstAttribute="bottom" secondItem="KQO-QY-8F2" secondAttribute="bottom" constant="40" id="sZl-hd-dDC"/>
                         <constraint firstItem="lI7-ld-BrA" firstAttribute="top" secondItem="YzI-uh-1Ki" secondAttribute="bottom" id="tJF-wM-syk"/>
                         <constraint firstItem="lI7-ld-BrA" firstAttribute="leading" secondItem="CL8-kc-TBn" secondAttribute="trailing" constant="10" id="tNZ-LD-NOp"/>
                         <constraint firstItem="KQO-QY-8F2" firstAttribute="top" secondItem="XdB-s7-cvZ" secondAttribute="top" id="wCv-7z-EXl"/>

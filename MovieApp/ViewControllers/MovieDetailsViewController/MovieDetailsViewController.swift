@@ -17,11 +17,13 @@ class MovieDetailsViewController: mainViewController {
     @IBOutlet weak var movieDescription: UILabel!
     @IBOutlet weak var geners: UILabel!
     @IBOutlet weak var rateView: UIView!
+    @IBOutlet weak var ImageHeight: NSLayoutConstraint!
     
     var movieId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         rateView.layer.cornerRadius = 29
+        ImageHeight.constant = screenWidth * 2/3
         getMovieDetails()
         // Do any additional setup after loading the view.
     }
