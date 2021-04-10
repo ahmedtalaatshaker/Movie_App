@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "realmDB.delete(movieId:):dbHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allSavedMovies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.drawMovies(allMovies:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allSavedMovies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchViewController.drawMovies(allMovies:):SearchViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allSavedMovies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UserServices.serverRequestsNSArray(url:method:parameters:headers:success:failure:):ServerRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "((readableJson as! [String:Any])[&quot;results&quot;] as! NSArray)[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

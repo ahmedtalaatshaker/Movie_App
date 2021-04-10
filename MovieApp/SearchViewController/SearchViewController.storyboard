@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="hVu-m8-tJn">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="UfL-n6-gd3" customClass="SearchViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpw-if-DE7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-06-zkG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" placeholder="Enter a Search Keyword" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-h6-sZv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                        <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bOb-h6-sZv" secondAttribute="bottom" id="8HJ-8c-fHg"/>
+                                    <constraint firstItem="bOb-h6-sZv" firstAttribute="top" secondItem="zNI-06-zkG" secondAttribute="top" id="A3p-Ng-dmB"/>
+                                    <constraint firstItem="bOb-h6-sZv" firstAttribute="leading" secondItem="zNI-06-zkG" secondAttribute="leading" id="hhR-dV-ZwO"/>
+                                    <constraint firstAttribute="height" constant="70" id="ppn-9V-Xon"/>
+                                    <constraint firstAttribute="trailing" secondItem="bOb-h6-sZv" secondAttribute="trailing" id="z0b-LR-d48"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-dx-Crt">
+                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BAa-cy-znu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BAa-cy-znu" firstAttribute="leading" secondItem="bBe-dx-Crt" secondAttribute="leading" id="1Lg-IA-lRg"/>
+                                    <constraint firstItem="BAa-cy-znu" firstAttribute="centerX" secondItem="bBe-dx-Crt" secondAttribute="centerX" id="C1Q-qc-AeO"/>
+                                    <constraint firstAttribute="trailing" secondItem="BAa-cy-znu" secondAttribute="trailing" id="SKC-fD-YsC"/>
+                                    <constraint firstItem="BAa-cy-znu" firstAttribute="top" secondItem="bBe-dx-Crt" secondAttribute="top" id="Xcq-Id-mU7"/>
+                                    <constraint firstAttribute="bottom" secondItem="BAa-cy-znu" secondAttribute="bottom" id="vpT-8g-mbt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="yuf-Fb-nKn"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fnJ-uL-VlR"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bO-qZ-5Xa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bBe-dx-Crt" firstAttribute="leading" secondItem="5bO-qZ-5Xa" secondAttribute="leading" id="5mR-hk-JLb"/>
+                            <constraint firstItem="zNI-06-zkG" firstAttribute="trailing" secondItem="5bO-qZ-5Xa" secondAttribute="trailing" id="Br1-1d-aWQ"/>
+                            <constraint firstItem="bBe-dx-Crt" firstAttribute="top" secondItem="zNI-06-zkG" secondAttribute="bottom" id="P7v-dM-fBD"/>
+                            <constraint firstItem="5bO-qZ-5Xa" firstAttribute="trailing" secondItem="bBe-dx-Crt" secondAttribute="trailing" id="Pq5-os-QUW"/>
+                            <constraint firstItem="zNI-06-zkG" firstAttribute="leading" secondItem="5bO-qZ-5Xa" secondAttribute="leading" id="Qix-tm-spw"/>
+                            <constraint firstItem="5bO-qZ-5Xa" firstAttribute="bottom" secondItem="bBe-dx-Crt" secondAttribute="bottom" id="Y9N-Iq-a5r"/>
+                            <constraint firstItem="zNI-06-zkG" firstAttribute="top" secondItem="5bO-qZ-5Xa" secondAttribute="top" id="rKr-Pc-adt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieStack" destination="BAa-cy-znu" id="kbb-wR-kFI"/>
+                        <outlet property="scroll" destination="bBe-dx-Crt" id="QQn-Ve-0Vj"/>
+                        <outlet property="search" destination="bOb-h6-sZv" id="v9A-O7-8jY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xu-iz-Mdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

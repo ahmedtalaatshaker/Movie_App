@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fIW-Ye-DdG">
+            <objects>
+                <viewController storyboardIdentifier="nowPlayingViewController" id="peg-Ox-BN8" customClass="ViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osm-sv-zsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QV3-do-B74">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gf-HJ-DPi">
+                                        <rect key="frame" x="20" y="21.5" width="130.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNo-oI-HGa">
+                                        <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4w1-rF-lOP"/>
+                                            <constraint firstAttribute="height" constant="50" id="DFS-vs-NZf"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="like"/>
+                                        <connections>
+                                            <action selector="showSavedMovies:" destination="peg-Ox-BN8" eventType="touchUpInside" id="BmK-q2-Squ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jNo-oI-HGa" secondAttribute="trailing" constant="10" id="Nhd-H5-xDp"/>
+                                    <constraint firstAttribute="height" constant="70" id="Wvt-8o-BYz"/>
+                                    <constraint firstItem="2Gf-HJ-DPi" firstAttribute="centerY" secondItem="QV3-do-B74" secondAttribute="centerY" id="cTN-g3-qLK"/>
+                                    <constraint firstItem="2Gf-HJ-DPi" firstAttribute="leading" secondItem="QV3-do-B74" secondAttribute="leading" constant="20" id="ikj-OL-DZR"/>
+                                    <constraint firstItem="jNo-oI-HGa" firstAttribute="centerY" secondItem="2Gf-HJ-DPi" secondAttribute="centerY" id="yh1-F5-GZe"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gv-b3-oLS">
+                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IOc-Vt-yzT">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="728"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IOc-Vt-yzT" firstAttribute="top" secondItem="1gv-b3-oLS" secondAttribute="top" constant="10" id="6HT-X1-sbn"/>
+                                    <constraint firstAttribute="trailing" secondItem="IOc-Vt-yzT" secondAttribute="trailing" id="7jQ-f7-V39"/>
+                                    <constraint firstItem="IOc-Vt-yzT" firstAttribute="centerX" secondItem="1gv-b3-oLS" secondAttribute="centerX" id="XKY-Oz-0Wu"/>
+                                    <constraint firstItem="IOc-Vt-yzT" firstAttribute="leading" secondItem="1gv-b3-oLS" secondAttribute="leading" id="Zrp-lq-73u"/>
+                                    <constraint firstAttribute="bottom" secondItem="IOc-Vt-yzT" secondAttribute="bottom" constant="10" id="u57-cH-wLt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0TQ-LJ-8Xa"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="2IZ-Px-0KG"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GwE-hM-aLb"/>
+                        <constraints>
+                            <constraint firstItem="1gv-b3-oLS" firstAttribute="top" secondItem="QV3-do-B74" secondAttribute="bottom" id="CIF-Az-lfq"/>
+                            <constraint firstItem="GwE-hM-aLb" firstAttribute="trailing" secondItem="1gv-b3-oLS" secondAttribute="trailing" id="M8o-QS-KUA"/>
+                            <constraint firstItem="QV3-do-B74" firstAttribute="top" secondItem="GwE-hM-aLb" secondAttribute="top" id="PyE-7e-IVH"/>
+                            <constraint firstItem="1gv-b3-oLS" firstAttribute="leading" secondItem="GwE-hM-aLb" secondAttribute="leading" id="aR9-Dt-wf6"/>
+                            <constraint firstItem="GwE-hM-aLb" firstAttribute="bottom" secondItem="1gv-b3-oLS" secondAttribute="bottom" id="hHF-BF-L02"/>
+                            <constraint firstItem="QV3-do-B74" firstAttribute="leading" secondItem="GwE-hM-aLb" secondAttribute="leading" id="hil-LS-9Ho"/>
+                            <constraint firstItem="GwE-hM-aLb" firstAttribute="trailing" secondItem="QV3-do-B74" secondAttribute="trailing" id="vgT-aA-cFp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieStack" destination="IOc-Vt-yzT" id="Nvd-S0-iWh"/>
+                        <outlet property="savedButton" destination="jNo-oI-HGa" id="K3F-fG-8bC"/>
+                        <outlet property="scroll" destination="1gv-b3-oLS" id="VFN-bq-Prr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFq-FO-VO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="like" width="512" height="512"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

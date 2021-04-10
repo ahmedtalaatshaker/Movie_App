@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ESTabBarController-swift (2.8.0)
+  - Kingfisher (6.1.1)
+  - MBProgressHUD (1.1.0)
+  - Realm (10.7.0):
+    - Realm/Headers (= 10.7.0)
+  - Realm/Headers (10.7.0)
+  - RealmSwift (10.7.0):
+    - Realm (= 10.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - ESTabBarController-swift
+  - Kingfisher
+  - MBProgressHUD (~> 1.1.0)
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESTabBarController-swift
+    - Kingfisher
+    - MBProgressHUD
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Realm: a03c41a3afbda6c197ba4dfba5428b8b54cc2df4
+  RealmSwift: 5e7abc842276d7fabd386e67afbf3efde54eb1c6
+
+PODFILE CHECKSUM: bcd005295cbe28bebd103a54b705d50884174eb2
+
+COCOAPODS: 1.10.1
