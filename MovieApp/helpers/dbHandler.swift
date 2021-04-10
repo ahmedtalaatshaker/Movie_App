@@ -93,7 +93,6 @@ class realmDB : NSObject{
         print(allSavedMovies)
         delegate_TopRated?.setSaved(exists: allSavedMovies.count > 0)
         delegate_NowPlaying?.setSaved(exists: allSavedMovies.count > 0)
-
     }
     
 }

@@ -203,14 +203,10 @@
 		D0632E622620837400107ACC /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				D0C3C8FC2621D82200EE8B0A /* ViewControllers */,
 				D0632F2D2620B18100107ACC /* Models */,
 				D0632F0E2620A5B500107ACC /* Network */,
 				D0632EDC26209AF200107ACC /* InitTabBar */,
-				D0632EEE2620A14400107ACC /* NowPlayingViewController */,
-				D0632EF22620A15C00107ACC /* TopRatedViewController */,
-				D0632EFD2620A1AD00107ACC /* SearchViewController */,
-				D0C3C8922620D42C00EE8B0A /* MovieDetailsViewController */,
-				D0C3C8EE2621CAC000EE8B0A /* SavedMoviesViewController */,
 				D0C3C8CD26210F7400EE8B0A /* helpers */,
 				D0632E632620837400107ACC /* AppDelegate.swift */,
 				D0632E652620837400107ACC /* SceneDelegate.swift */,
@@ -350,6 +346,18 @@
 				D0C3C8F72621CAE300EE8B0A /* SavedMoviesViewController.storyboard */,
 			);
 			path = SavedMoviesViewController;
+			sourceTree = "<group>";
+		};
+		D0C3C8FC2621D82200EE8B0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0632EEE2620A14400107ACC /* NowPlayingViewController */,
+				D0632EF22620A15C00107ACC /* TopRatedViewController */,
+				D0632EFD2620A1AD00107ACC /* SearchViewController */,
+				D0C3C8922620D42C00EE8B0A /* MovieDetailsViewController */,
+				D0C3C8EE2621CAC000EE8B0A /* SavedMoviesViewController */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

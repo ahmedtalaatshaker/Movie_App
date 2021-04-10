@@ -3,26 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "realmDB.delete(movieId:):dbHandler.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "allSavedMovies">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "mainViewController.read():MainViewController.swift">
       </ContextState>
       <ContextState
-         contextName = "ViewController.drawMovies(allMovies:):ViewController.swift">
+         contextName = "TopRatedViewController.scrollViewDidScroll(_:):TopRatedViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "allSavedMovies">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "SearchViewController.drawMovies(allMovies:):SearchViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "allSavedMovies">
+               value = "scrollView.contentOffset.y">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -10,7 +10,7 @@ import Foundation
 
 class movieGeners : NSObject, NSCoding{
     
-    var name : String! // edit
+    var name : String!
     var id :Int!
    
     init(fromDictionary dictionary: [String:Any]){

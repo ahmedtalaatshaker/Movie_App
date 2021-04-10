@@ -11,6 +11,7 @@ target 'MovieApp' do
   pod "ESTabBarController-swift"
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'RealmSwift'
+  pod 'CRRefresh'
 
 
   target 'MovieAppTests' do

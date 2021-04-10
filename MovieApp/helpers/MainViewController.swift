@@ -13,6 +13,12 @@ import RealmSwift
 class mainViewController :UIViewController{
     let screenWidth = UIScreen.main.bounds.width
     
+    func removeAllMovieViews(movieStack:UIStackView){
+        for movieView in movieStack.arrangedSubviews{
+            movieView.removeFromSuperview()
+        }
+    }
+    
     func updateViewWithLikedIcon(movieStack:UIStackView){
         for vi in movieStack.subviews {
             let movView = vi as! MovieView
@@ -86,13 +92,9 @@ class mainViewController :UIViewController{
             
         }
         spinner.activityIndicatorColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        
-        
     }
     
     func hideActivityIndicator() {
         MBProgressHUD.hide(for: self.view, animated: true)
     }
-    
-    
 }
